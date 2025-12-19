@@ -1,51 +1,38 @@
 import Layout from "@/components/Layout";
 import { Linkedin, Mail } from "lucide-react";
-
 const Team = () => {
-  const team = [
-    {
-      name: "Avi Sawhney",
-      role: "Co-Founder",
-      bio: "Passionate about improving neonatal care through innovative technology solutions.",
-      image: "AS",
-    },
-    {
-      name: "Ryan Chan",
-      role: "Co-Founder",
-      bio: "Engineering lead focused on building reliable and safe medical devices.",
-      image: "RC",
-    },
-    {
-      name: "Yifan Gao",
-      role: "Co-Founder",
-      bio: "Product specialist dedicated to creating intuitive healthcare solutions.",
-      image: "YG",
-    },
-    {
-      name: "Anthony Yurnets",
-      role: "Co-Founder",
-      bio: "Operations expert ensuring seamless delivery of life-saving technology.",
-      image: "AY",
-    },
-  ];
-
-  const values = [
-    {
-      title: "Safety First",
-      description: "Every decision we make prioritizes the wellbeing of the infants in our care.",
-    },
-    {
-      title: "Continuous Innovation",
-      description: "We never stop improving, driven by feedback from healthcare professionals worldwide.",
-    },
-    {
-      title: "Accessible Care",
-      description: "We believe every newborn deserves access to the best neonatal care technology.",
-    },
-  ];
-
-  return (
-    <Layout>
+  const team = [{
+    name: "Avi Sawhney",
+    role: "Co-Founder",
+    bio: "Passionate about improving neonatal care through innovative technology solutions.",
+    image: "AS"
+  }, {
+    name: "Ryan Chan",
+    role: "Co-Founder",
+    bio: "Engineering lead focused on building reliable and safe medical devices.",
+    image: "RC"
+  }, {
+    name: "Yifan Gao",
+    role: "Co-Founder",
+    bio: "Product specialist dedicated to creating intuitive healthcare solutions.",
+    image: "YG"
+  }, {
+    name: "Anthony Yurnets",
+    role: "Co-Founder",
+    bio: "Operations expert ensuring seamless delivery of life-saving technology.",
+    image: "AY"
+  }];
+  const values = [{
+    title: "Safety First",
+    description: "Every decision we make prioritizes the wellbeing of the infants in our care."
+  }, {
+    title: "Continuous Innovation",
+    description: "We never stop improving, driven by feedback from healthcare professionals worldwide."
+  }, {
+    title: "Accessible Care",
+    description: "We believe every newborn deserves access to the best neonatal care technology."
+  }];
+  return <Layout>
       {/* Hero */}
       <section className="py-20 md:py-28 bg-hero-gradient">
         <div className="container mx-auto px-6">
@@ -54,7 +41,9 @@ const Team = () => {
               The Minds Behind{" "}
               <span className="text-gradient">NeoNatal</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <p className="text-lg md:text-xl text-muted-foreground animate-fade-in" style={{
+            animationDelay: "0.1s"
+          }}>
               A passionate team of doctors, engineers, and innovators united by a 
               single mission: giving every newborn the warmth they deserve.
             </p>
@@ -65,13 +54,10 @@ const Team = () => {
       {/* Team Grid */}
       <section className="py-20">
         <div className="container mx-auto px-6">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div 
-                key={member.name}
-                className="group bg-card border border-border rounded-2xl p-6 hover:shadow-soft hover:-translate-y-1 transition-all duration-300 animate-fade-in"
-                style={{ animationDelay: `${0.1 * index}s` }}
-              >
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 align-items:center">
+            {team.map((member, index) => <div key={member.name} className="group bg-card border border-border rounded-2xl p-6 hover:shadow-soft hover:-translate-y-1 transition-all duration-300 animate-fade-in" style={{
+            animationDelay: `${0.1 * index}s`
+          }}>
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shadow-glow">
                     {member.image}
@@ -83,21 +69,14 @@ const Team = () => {
                 </div>
                 <p className="text-muted-foreground text-sm mb-4">{member.bio}</p>
                 <div className="flex items-center gap-3">
-                  <a 
-                    href="#" 
-                    className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
-                  >
+                  <a href="#" className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
                     <Linkedin className="w-4 h-4" />
                   </a>
-                  <a 
-                    href="#" 
-                    className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
-                  >
+                  <a href="#" className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
                     <Mail className="w-4 h-4" />
                   </a>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -115,19 +94,15 @@ const Team = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {values.map((value, index) => (
-              <div 
-                key={value.title}
-                className="text-center animate-fade-in"
-                style={{ animationDelay: `${0.1 * index}s` }}
-              >
+            {values.map((value, index) => <div key={value.title} className="text-center animate-fade-in" style={{
+            animationDelay: `${0.1 * index}s`
+          }}>
                 <div className="w-12 h-12 rounded-full bg-primary mx-auto mb-4 flex items-center justify-center text-primary-foreground font-bold shadow-glow">
                   {index + 1}
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-3">{value.title}</h3>
                 <p className="text-muted-foreground">{value.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -155,8 +130,6 @@ const Team = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Team;
