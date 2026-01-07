@@ -17,9 +17,9 @@ const Features = () => {
   const mainFeatures = [
     {
       icon: Thermometer,
-      title: "Precision Temperature Control",
-      description: "Our advanced thermal regulation system maintains skin temperature within ±0.1°C, using dual-mode servo control that adapts to each infant's needs.",
-      highlights: ["Dual-mode servo control", "Skin & air temperature modes", "Automatic weaning function"],
+      title: "Closed-loop Thermal Control System",
+      description: "The main innovation that our blanket provides is an inexpensive closed-loop thermal control system used to provide a temperature range suitable for newborns. Our design philosophy urges each component to be selected to balance accuracy, safety, and cost-efficiency. This is crucial to protect infants of pre-mature birth, especially in low-income settings where proper incubators are not available in hospitals.",
+      highlights: ["Inexpensive", "Portable", "Energy Efficient"],
     },
     {
       icon: Shield,
