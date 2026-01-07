@@ -3,19 +3,19 @@ import { Linkedin, Mail } from "lucide-react";
 const Team = () => {
   const team = [{
     name: "Avi Sawhney",
-    bio: "Passionate about improving neonatal care through innovative technology solutions.",
+    bio: "Avi Sawhney is the business and presentation lead of the group. He did the market research and introduced the problem of hypothermia and low blood oxygen in infants.",
     image: "AS"
   }, {
     name: "Ryan Chan",
-    bio: "Engineering lead focused on building reliable and safe medical devices.",
+    bio: "Ryan Chan whose knowledge in coding, hardware, and business allowed him to contribute in every part of this project.",
     image: "RC"
   }, {
     name: "Yifan Gao",
-    bio: "Product specialist dedicated to creating intuitive healthcare solutions.",
+    bio: "Yifan Gao acts as the hardware expert of the team. Through past experiences he developed the blanket by assembling the components into one functioning innovation.",
     image: "YG"
   }, {
-    name: "Anthony Yurnets",
-    bio: "Operations expert ensuring seamless delivery of life-saving technology.",
+    name: "Anthony Yurynets",
+    bio: "Anthony Yurynets is the lead-coder on the team. His experience in coding and building robots for his VEX team has allowed him to effectively design the temperature regulation software of the blanket that also monitors the vitals of the infant. He was also extremely helpful in building the actual blanket.",
     image: "AY"
   }];
   const values = [{
